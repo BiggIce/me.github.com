@@ -162,3 +162,23 @@ span
     border-color: rgb(225, 248, 18);
     margin: 10px;
 }
+/* Styles par défaut pour les écrans plus larges */
+body {
+    font-size: 16px;
+}
+
+/* Pour les écrans de moins de 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Réduit la taille de la police sur les petits écrans */
+    }
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Crée une grille fluide */
+    gap: 10px; /* Espace entre les éléments */
+}
+img {
+    max-width: 100%; /* L'image ne dépasse jamais la largeur de son conteneur */
+    height: auto; /* Conserve les proportions */
+}
