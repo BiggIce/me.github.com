@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test page html</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./WhatsApp Image 2024-10-29 at 20.05.03.jpeg" />
+</head>
+<body>
+    <nav>
+        <span><a href="#accueil">Accueil</a></span>
+        <span><a href="#formulaires">Formulaires</a></span>
+        <span><a href="#infos">Infos</a></span>
+        <span><a href="#besoin">Besoin</a></span>
+    </nav>
+    <header>
+        <h1>Bonjour mes chers amis comment allez-vous ?</h1>
+        <p>
+            Cette page est un exemple simple pour m'entraîner à créer des sites web.
+            <strong>J'apprends à structurer un document HTML et à utiliser des styles CSS pour améliorer l'apparence.</strong>
+            La création de pages web est une compétence précieuse qui me permettra de partager mes idées et mes projets avec le monde. MERCI !
+        </p>
+    </header>
+    <main>
+        <section id="accueil">
+            <h2>Mes articles</h2>
+            <ul class="right-aligned-list">
+                <li>Montre</li>
+                <li>Audi RS3</li>
+                <li>Moto</li>
+                <li>Kit Arduino</li>
+                <li>Ai caramba</li>
+            </ul>
+        </section>
+        <section id="infos">
+            <h3>Photo d'un petit écureuil sauvage dans la nature ! &#128512;</h3>
+            <img src="https://images.unsplash.com/photo-1730204793197-b5f06e155820?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMzfEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D" height="300" alt="Une image illustrative" class="img-wide" />
+            <div>
+                <h4>Un tableau pour les prix</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Montre</th>
+                            <th>Audi RS3</th>
+                            <th>Moto</th>
+                            <th>Kit Arduino</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>533€</td>
+                            <td>2543€</td>
+                            <td>432€</td>
+                            <td>242€</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="formulaires">
+            <h2>Les formulaires</h2>
+            <form action="" method="post">
+                <label for="name">Nom</label>
+                <input type="text" id="name" placeholder="Entrez votre nom" required />
+                <label for="age">Entrez votre âge</label>
+                <input type="number" id="age" value="18" placeholder="Votre âge" />
+                <label for="email">Votre email</label>
+                <input type="email" name="email" id="email" required />
+                <label for="gender">Votre genre</label>
+                <select id="gender" required>
+                    <option value="Femme">Femme</option>
+                    <option value="Homme">Homme</option>
+                    <option value="Autres">Autres</option>
+                </select>
+                <textarea placeholder="Votre message" cols="20" rows="5"></textarea>
+                <input type="submit" value="Envoyer" />
+            </form>
+        </section>
+        <section id="besoin">
+            <h2>Besoin d'aide ?</h2>
+            <div>
+                <h5>&#9745; Les liens</h5>
+                <a href="https://youtu.be/68oSyuKVjeU" target="_blank" rel="noopener noreferrer">Petit cours HTML &#128176;</a>
+            </div>
+            <div class="video-container">
+                <h6>&#9835; Les vidéos</h6>
+                <video width="560" height="315" loop controls>
+                    <source src="https://cdn.pixabay.com/video/2015/10/16/1044-142621375_large.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="mailto:carterlebron06@gmail.com">Contactez-moi !</a>
+        <br />
+        <a href="./notice.txt" download="">Télécharger le code source</a>
+    </footer>
+</body>
+</html>

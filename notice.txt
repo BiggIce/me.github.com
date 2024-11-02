@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test page html</title>
+    <!-- Ceci c'est juste pour ajouter l'icone qui reste souvent en haut des sites!  -->
+    <link
+      rel="shortcut icon"
+      href="./WhatsApp Image 2024-10-29 at 20.05.03.jpeg"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <!-- li veut dire liste -->
+        <li>Accueil</li>
+        <li>Infos</li>
+        <li>Contact</li>
+        <li>
+          <a href="#form">Formulaire</a>
+        </li>
+        <li>Besoin</li>
+      </ul>
+    </nav>
+    <header>
+      <!-- Ceci c'est le titre le plus grand de la page -->
+      <h1>Bonjour mes chers amis comment aller vous ?</h1>
+      <!-- em veut dire texte en italique -->
+      <!-- strong veut dire texte en  gras -->
+      <p>
+        Cette page est un exemple simple pour m'entraîner à créer des sites web.
+        <strong
+          >J'apprends à structurer un document HTML et à utiliser des styles CSS
+          pour améliorer l'apparence.</strong
+        >
+        La création de pages web est une compétence précieuse qui me permettra
+        de partager mes idées et mes projets avec le monde. MERCI!
+      </p>
+      <!-- lorem veut dire un faux paragraphe, il peut aider un paragraphe de par exemple 30 ou 50 mots jusqu'a plus infinie -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ad vel,
+        culpa assumenda id repellat non placeat blanditiis consequuntur voluptas
+        ea harum consequatur, asperiores ducimus ab accusantium quia magnam quae
+        voluptatum aliquam numquam? Odit, ipsam. Nobis, dolorum aliquam,
+        provident aperiam tempora qui veniam molestiae reiciendis mollitia
+        dignissimos, eius doloremque error quos exercitationem amet dolores
+        quibusdam quidem necessitatibus consequatur totam nam optio incidunt
+        quod quia. Quasi error harum asperiores sint reprehenderit.
+      </p>
+    </header>
+    <main>
+      <section>
+        <h2>Mes articles</h2>
+        <ul>
+          <li>Montre</li>
+          <li>Audi RS3</li>
+          <li>Moto</li>
+          <li>Kit Arduino</li>
+          <li>Ai caramba</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Ici, bon bef je sais pas quoi ecrire</h3>
+        <!-- Pour mettre une image il faut faire la balise img -->
+        <img
+          src="https://images.unsplash.com/photo-1730204793197-b5f06e155820?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMzfEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D"
+          height="300"
+          alt=""
+        />
+        <!-- height c'est la hauteur -->
+        <div>
+          <h4>Un tableau pour les prix</h4>
+          <table border="2" cellpadding="20">
+            <!-- thead c'est pour l'entete du tableau, tr c'est pour cree une ligne, th c'est pour les colonne-->
+            <thead>
+              <tr>
+                <th>Montre</th>
+                <th>Audi RS3</th>
+                <th>Moto</th>
+                <th>Kit Arduino</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>533€</td>
+                <td>2543€</td>
+                <td>432€</td>
+                <td>242€</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h5>&#9745; Les liens</h5>
+          <!-- le a, signifie une ancre, ça pour permet d'ajouter des liens. -->
+          <!-- blank permet de nous amener sur un autre onglet -->
+          <a href="https://youtu.be/68oSyuKVjeU" target="_blank"
+            >Petit cours HTML&#128176;</a
+          >
+        </div>
+        <div>
+          <h6>&#9835; Les videos</h6>
+          <!-- autoplay veut dire joue toi automatiquement, muted veut dire muter, loop veut dire en bloucle -->
+          <video src="./video.mp4 " height="300" autoplay loop></video>
+        </div>
+      </section>
+      <section>
+        <h2>Les formulaires</h2>
+        <!-- ceci c'est juste un lien dans la page -->
+        <section id="form">
+        <form action="">
+          <!-- for et id premettent de lié le label a son input -->
+          <label for="name">Nom</label>
+          <input type="text" id="name" placeholder="Entrez votre nom " />
+          <!-- br c'est pour aller a la ligne -->
+          <br />
+          <label for="age">Entrez votre age</label>
+          <input type="number" id="age" value="18" placeholder="Votre age" />
+          <br />
+          <label for="email">Votre email</label>
+          <input type="email" name="email" id="email">
+          <br />
+          <label for="gender">Votre genre</label>
+          <select id="gender" id="">
+            <option value="Femme">Femme</option>
+            <option value="Homme">Homme</option>
+            <option value="Autres">Gay</option>
+            <option value="Lesbiennes">Lesbiennes</option>
+            <option value="Non genré">Non genré</option>
+            <option value="Sans genre">Sans genre</option>
+          </select>
+          <div>
+            <input type="radio" name="type" id="human" checked />
+            <label for="human">Humain</label>
+            <input type="radio" name="type" id="dog" />
+            <label for="dog">Chien</label>
+            <input type="radio" name="type" id="cat" />
+            <label for="cat">Chat</label>
+          </div>
+          <textarea placeholder="Votre message" cols="20" rows="5"> </textarea>
+          <br />
+          <input type="checkbox" name="" id="cgv" />
+          <label for="cgv"
+            >Accepter les nos conditions generale d'utilisation</label
+          >
+          <br />
+          <input type="submit" value="Envoyer" />
+        </form>
+      </section>
+    </main>
+    <!-- mail et envoie de fichier -->
+    <footer>
+      <a href="mailto:carterlebron06@gmail.com">Contactez moi!</a>
+      <br />
+      <a href="./notice.txt" download="">Telecharger cette notice</a>
+    </footer>
+  </body>
+</html>
